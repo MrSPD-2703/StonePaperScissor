@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".HomePageFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/ForAnim1"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/paper_right"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ForAnim2"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/scissor_left"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHighscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/font"
+            android:text="Stone Paper Scissor "
+            android:textColor="#2196F3"
+            android:textSize="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/startgame"
+            app:layout_constraintEnd_toEndOf="@+id/startgame"
+            app:layout_constraintHorizontal_bias="0.698"
+            app:layout_constraintStart_toStartOf="@+id/startgame" />
+
+        <ImageView
+            android:id="@+id/startgame"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/start_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499" />
+
+        <ImageView
+            android:id="@+id/exitgame"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/exit_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startgame" />
+
+        <ImageView
+            android:id="@+id/igSolo"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="92dp"
+            android:src="@drawable/solo_button"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499" />
+
+        <ImageView
+            android:id="@+id/igMulti"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/mutiplayer_button"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/igSolo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

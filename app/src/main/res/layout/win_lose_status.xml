@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/win_lose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/font"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/green1" />
+
+    <TextView
+        android:id="@+id/afterwin_clabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/win_lose"
+        android:layout_toStartOf="@+id/comp_final_score"
+        android:fontFamily="@font/font"
+        android:text="Computer: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/afterwin_plabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/afterwin_clabel"
+        android:layout_toLeftOf="@+id/player_final_score"
+        android:fontFamily="@font/font"
+        android:text="Player: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/comp_final_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/win_lose"
+        android:layout_toEndOf="@+id/win_lose"
+        android:fontFamily="@font/font"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/player_final_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comp_final_score"
+        android:layout_toEndOf="@+id/win_lose"
+        android:fontFamily="@font/font"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/play_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smiley"
+        android:layout_alignLeft="@+id/smiley"
+        android:layout_margin="12dp"
+        android:background="@drawable/button_bg_green"
+        android:text="PLAY AGAIN"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/smiley"
+        android:layout_margin="12dp"
+        android:layout_toRightOf="@+id/play_again"
+        android:background="@drawable/button_bg"
+        android:text="EXIT"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/smiley"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/player_final_score"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="41dp" />
+</RelativeLayout>
